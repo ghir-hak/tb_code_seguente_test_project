@@ -1,6 +1,7 @@
 package lib
 
 import (
+	"fmt"
 	"github.com/taubyte/go-sdk/event"
 )
 
@@ -12,6 +13,8 @@ func ping(e event.Event) uint32 {
 	}
 
 	h.Write([]byte("PONG"))
+	fmt.Println("hello")
 
 	return 0
 }
+
